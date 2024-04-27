@@ -73,22 +73,22 @@ print(f"There are combined {nullValuesCount} null values for orientation, confid
 
 # Calculate the statistics we want
 
-evaluations_np = np.array(evaluations)
-mean_evaluation = np.mean(evaluations_np)
-median_evaluation = np.median(evaluations_np)
-mode_evaluation = stats.mode(evaluations_np)
-std_dev_evaluation = np.std(evaluations_np)
-q1_evaluation = np.percentile(evaluations_np, 25)
-q3_evaluation = np.percentile(evaluations_np, 75)
+evalu = np.array(evaluations)
+meanEvalu = np.mean(evalu)
+medianEvalu = np.median(evalu)
+modeEvalu = stats.mode(evalu)
+stddDevEvalu = np.std(evalu)
+q1Evalu = np.percentile(evalu, 25)
+q3Evalu = np.percentile(evalu, 75)
 
 # Calculate statistics
-confidences_np = np.array(confidences)
-mean_confidence = np.mean(confidences_np)
-median_confidence = np.median(confidences_np)
-mode_confidence = stats.mode(confidences_np)
-std_dev_confidence = np.std(confidences_np)
-q1_confidence = np.percentile(confidences_np, 25)
-q3_confidence = np.percentile(confidences_np, 75)
+conf = np.array(confidences)
+meanConf = np.mean(conf)
+medianConf = np.median(conf)
+modeConf = stats.mode(conf)
+stddDevConfi = np.std(conf)
+q1Conf = np.percentile(conf, 25)
+q3Conf = np.percentile(conf, 75)
 
 
 
